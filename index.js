@@ -1,9 +1,9 @@
-  // Task 1 use async/await syntax to make the same GET request using Fetch API
+// Task 2: Fetch all posts using the Fetch API with async/await syntax and handle errors.
 
 async function getPost() {
   try {
     const response = await fetch(
-      "https://jsonplaceholder.typicode.com/posts/1"
+      "https://jsonplaceholder.typicode.com/posts"
     );
 
     if (!response.ok) {
@@ -19,4 +19,3 @@ async function getPost() {
 }
 
 getPost();
-

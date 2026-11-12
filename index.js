@@ -1,4 +1,5 @@
-// Task 2: Fetch all posts using the Fetch API with async/await syntax and handle errors.
+// Task 3: Fetch all posts and filter posts with titles shorter than 25 characters using the Fetch API.
+
 
 async function getPost() {
   try {
@@ -12,7 +13,12 @@ async function getPost() {
 
     const data = await response.json();
 
-    console.log("Response Data:", data);
+    const filteredPosts = data.filter(
+      (post) => post.title.length < 25
+    );
+
+    console.log("Posts with titles shorter than 25 characters:", filteredPosts);
+
   } catch (error) {
     console.error("Request Failed:", error);
   }

@@ -1,6 +1,6 @@
 # Fetch API Tasks
 
-This repository contains three tasks using the **Fetch API** in JavaScript with **Async/Await** syntax.
+This repository contains four JavaScript tasks covering the Fetch API, Async/Await, and custom array filtering.
 
 ## Tasks
 
@@ -18,15 +18,27 @@ This repository contains three tasks using the **Fetch API** in JavaScript with 
 
 ### Task 3: Filter Posts by Title Length
 - Fetch all posts from the API.
-- Use the `filter()` method to select posts whose title length is less than 25 characters.
+- Use the built-in `filter()` method to select posts whose title length is less than 25 characters.
+- Print only the filtered posts to the console.
+
+### Task 4: Implement a Custom Filter Function
+- Create a custom `customFilter()` function in a separate file named `utils.js`.
+- Use a `for` loop and an `if` condition to implement the filtering logic.
+- Do not use JavaScript's built-in `filter()` method inside the custom function.
+- Import and use `customFilter()` in `index.js`.
+- Filter posts whose title length is less than 25 characters.
 - Print only the filtered posts to the console.
 
 ## Technologies Used
+
 - JavaScript
 - Fetch API
 - Async/Await
 - Promises
 - Array Filter Method
+- Custom Filter Function
+- For Loop and If Condition
+- CommonJS Modules (`require` and `module.exports`)
 
 ## How to Run
 

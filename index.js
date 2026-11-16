@@ -1,5 +1,6 @@
-// Task 3: Fetch all posts and filter posts with titles shorter than 25 characters using the Fetch API.
+// Task 4: Implement a custom filter function to filter posts with titles shorter than 25 characters.
 
+const customFilter = require("./utils");
 
 async function getPost() {
   try {
@@ -13,11 +14,12 @@ async function getPost() {
 
     const data = await response.json();
 
-    const filteredPosts = data.filter(
+    const filteredPosts = customFilter(
+      data,
       (post) => post.title.length < 25
     );
 
-    console.log("Posts with titles shorter than 25 characters:", filteredPosts);
+    console.log("Filtered Posts:", filteredPosts);
 
   } catch (error) {
     console.error("Request Failed:", error);

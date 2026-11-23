@@ -1,6 +1,6 @@
 # Fetch API Tasks
 
-This repository contains four JavaScript tasks covering the Fetch API, Async/Await, and custom array filtering.
+This repository contains five JavaScript tasks covering the Fetch API, Async/Await, and custom array methods.
 
 ## Tasks
 
@@ -29,6 +29,17 @@ This repository contains four JavaScript tasks covering the Fetch API, Async/Awa
 - Filter posts whose title length is less than 25 characters.
 - Print only the filtered posts to the console.
 
+### Task 5: Implement Custom Map and Reduce Functions
+- Create a custom `customMap()` function in `utils.js`.
+- Use a `for` loop to apply the callback function to each array element and return a new array.
+- Create a custom `customReduce()` function in `utils.js`.
+- Use a `for` loop to accumulate a single result from the array elements.
+- Do not use JavaScript's built-in `map()` or `reduce()` methods inside the custom functions.
+- Export and import both functions using CommonJS modules.
+- Use `customMap()` to extract post titles.
+- Use `customReduce()` to count the total number of posts.
+- Print the results to the console.
+
 ## Technologies Used
 
 - JavaScript
@@ -37,6 +48,8 @@ This repository contains four JavaScript tasks covering the Fetch API, Async/Awa
 - Promises
 - Array Filter Method
 - Custom Filter Function
+- Custom Map Function
+- Custom Reduce Function
 - For Loop and If Condition
 - CommonJS Modules (`require` and `module.exports`)
 
